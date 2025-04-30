@@ -1,0 +1,60 @@
+:root {
+    --text-color: #333333;
+    --background-color: #f4f4f4;
+    --text-p: Roboto, sans-serif;
+    --text-h1: 'Comic Relief', cursive;
+    --boder-color: #3333333d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+
+}
+
+body>* {
+    margin: 1rem;
+}
+
+p {
+    font-family: var(--text-p);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: var(--text-h1);
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header>* {
+    margin: 0 1rem;
+}
+
+.header-text {
+    margin-bottom: auto;
+    flex: 1;
+}
+
+.header-text-content>* {
+    margin: 0;
+}
+
+.header-menu-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.header-menu-content>* {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-right: var(--boder-color) solid 1px;
+}
