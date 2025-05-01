@@ -17,27 +17,25 @@
 
 <body>
     <header>
-        <div class="">
+        <div class="header-title">
             <img src="images/dev-preto.png" width="100" alt="Icone de Programção">
-        </div>
-        <div class="header-text">
             <div class="header-text-content">
-                <h1>Matheus dos Santos Vicentim</h1>
-                <p>CSharp | VB.Net.....</p>
-            </div>
-
-            <div class="header-menu-content">
-                <div><a href="">Conhecimento</a></div>
-                <div><a href="">Habilidade</a></div>
-                <div><a href="">Redes</a></div>
+                <h1 class="nome">Matheus dos Santos Vicentim</h1>
+                <p class="subtitle">CSharp | VB.Net.....</p>
             </div>
         </div>
+        <nav>
+            <div class="nav-container">
+                <a href="#habilidades" class="nav-link">Habilidade</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#redes" class="nav-link">Redes</a>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html" title="Home">Home</a>
-    </nav>
     <main>
-        <h1>Olá! Bem vindo a minha Pagina!</h1>
+        <section id="habilidades" class="habilidades"></section>
+        <section id="sobre" class="sobre"></section>
+        <section id="redes" class="redes"></section>
     </main>
     <footer>
         <p>Desenvolvido por Matheus</p>

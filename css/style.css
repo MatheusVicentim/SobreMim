@@ -6,16 +6,20 @@
     --boder-color: #3333333d;
 }
 
+html {
+    background-color: var(--background-color);
+}
+
 body {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     background-color: var(--background-color);
 
 }
 
-body>* {
+/* body>* {
     margin: 1rem;
-}
+} */
 
 p {
     font-family: var(--text-p);
@@ -32,29 +36,99 @@ h1 {
 header {
     display: flex;
     align-items: center;
+    background-color: yellow;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header-text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    margin: 0;
+}
+
+.subtitle {
+    margin: 5px 0 0 0;
 }
 
 header>* {
     margin: 0 1rem;
 }
 
-.header-text {
-    margin-bottom: auto;
-    flex: 1;
-}
-
-.header-text-content>* {
-    margin: 0;
-}
-
-.header-menu-content {
+.header-title {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    align-items: center;
+    gap: 15px;
 }
 
-.header-menu-content>* {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border-right: var(--boder-color) solid 1px;
+.nav-container {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin: 30px 0;
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-family: var(--text-p);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.nav-link:hover {
+    color: #0f0f0f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito após o link */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #0f0f0f;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Efeito ao clicar */
+.nav-link:active {
+    transform: translateY(0);
+    background-color: rgba(15, 15, 15, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    background-color: brown;
+}
+
+footer {
+    background-color: tomato;
+}
+
+@media(max-width: 800px) {
+    header {
+        display: block;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
 }
