@@ -1,7 +1,9 @@
 :root {
-    --text-color: #333333;
+    --text-color-black: #333333;
+    --text-color-white: #f4f4f4;
     --background-color: #f4f4f4;
     --text-p: Roboto, sans-serif;
+    --text-label: Roboto, sans-serif;
     --text-h1: 'Comic Relief', cursive;
     --boder-color: #3333333d;
 }
@@ -14,7 +16,7 @@ body {
     margin: 0;
     padding: 1rem;
     background-color: var(--background-color);
-
+    padding-top: 100px;
 }
 
 /* body>* {
@@ -23,7 +25,7 @@ body {
 
 p {
     font-family: var(--text-p);
-    color: var(--text-color);
+    color: var(--text-color-black);
     font-size: 1rem;
 }
 
@@ -31,7 +33,7 @@ h1,
 h2,
 h3 {
     font-family: var(--text-h1);
-    color: var(--text-color);
+    color: var(--text-color-black);
     margin: 0;
     padding: 0;
 }
@@ -48,13 +50,42 @@ h3 {
     font-size: 1.6rem;
 }
 
-footer {
-    background-color: tomato;
+label {
+    font-family: var(--text-label);
+    color: var(--text-color-black);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Para mostrar o botão voltar ao topo */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0066cc;
+    color: var(--text-color-white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.back-to-top.show {
+    display: block;
+    opacity: 1;
 }
 
 @media(max-width: 768px) {
-    header {
-        display: block;
+    body {
+        padding-top: 120px;
     }
 
     /* 
