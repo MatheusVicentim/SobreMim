@@ -1,22 +1,25 @@
 :root {
     --text-color-black: #333333;
     --text-color-white: #f4f4f4;
-    --background-color: #f4f4f4;
+    --text-color-purple: #7b68ee;
+    --background-color-white: #f4f4f4;
     --text-p: Roboto, sans-serif;
     --text-label: Roboto, sans-serif;
     --text-h1: 'Comic Relief', cursive;
     --boder-color: #3333333d;
+    --background-color-black: #333333;
+    --background-color-black-op99: #333333fc;
 }
 
 html {
-    background-color: var(--background-color);
+    background-color: var(--background-color-white);
 }
 
 body {
     margin: 0;
     padding: 1rem;
-    background-color: var(--background-color);
-    padding-top: 100px;
+    background-color: var(--background-color-white);
+    padding-top: 90px;
 }
 
 /* body>* {
@@ -25,7 +28,7 @@ body {
 
 p {
     font-family: var(--text-p);
-    color: var(--text-color-black);
+    color: var(--text-color-white);
     font-size: 1rem;
 }
 
@@ -33,7 +36,7 @@ h1,
 h2,
 h3 {
     font-family: var(--text-h1);
-    color: var(--text-color-black);
+    color: var(--text-color-white);
     margin: 0;
     padding: 0;
 }
@@ -55,6 +58,32 @@ label {
     color: var(--text-color-black);
     font-size: 1rem;
     line-height: 1;
+}
+
+.container-logo-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo-horizontal {}
+
+.logo-matheus {
+    font-family: var(--text-p);
+    font-weight: 700;
+}
+
+.color-white {
+    color: var(--text-color-white);
+}
+
+.color-baclack {
+    color: var(--text-color-black);
+}
+
+.logo-dev {
+    color: var(--text-color-purple);
+    font-family: var(--text-p);
+    font-weight: 700;
 }
 
 /* Para mostrar o botão voltar ao topo */

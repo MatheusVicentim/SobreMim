@@ -1,5 +1,5 @@
 header {
-    background-color: #ffff00;
+    background-color: var(--background-color-black);
     display: flex;
     padding: 1rem 0;
     align-items: center;
@@ -21,7 +21,10 @@ header>* {
 }
 
 header.scrolled {
-    background-color: rgba(255, 255, 0, 0.95);
+    background-color: var(--background-color-black-op99);
+
+    padding: 0.5rem;
+
 }
 
 
@@ -31,24 +34,6 @@ header.scrolled {
     gap: 15px;
 }
 
-.logo {
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-.logo img {
-    width: 60px;
-    height: 60px;
-}
-
-.scrolled .logo {
-    width: 50px;
-    height: 50px;
-    /* font-size: 18px; */
-}
 
 
 .header-text-content {
@@ -60,6 +45,7 @@ header.scrolled {
     margin: 0;
     font-size: 2rem;
     transition: all 0.3s ease;
+    color: var(--text-color-purple);
 }
 
 .scrolled .nome {
@@ -67,13 +53,13 @@ header.scrolled {
 }
 
 .subtitle {
-    margin: 5px 0 0 0;
-    font-size: 1rem;
+    margin: 0;
+    font-size: 0.8rem;
     transition: all 0.3s ease;
 }
 
 .scrolled .subtitle {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .nav-container {
@@ -83,7 +69,7 @@ header.scrolled {
 }
 
 .nav-link {
-    color: var(--text-color-black);
+    color: var(--text-color-purple);
     font-family: var(--text-p);
     text-decoration: none;
     font-size: 16px;
@@ -101,7 +87,7 @@ header.scrolled {
 
 /* Efeito ao passar o mouse */
 .nav-link:hover {
-    color: #0f0f0f;
+    color: var(--text-color-purple);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -112,7 +98,7 @@ header.scrolled {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #0f0f0f;
+    background-color: var(--text-color-purple);
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
