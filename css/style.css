@@ -60,6 +60,14 @@ label {
     line-height: 1;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
 .container-logo-vertical {
     display: flex;
     flex-direction: column;
@@ -78,6 +86,10 @@ label {
 
 .color-baclack {
     color: var(--text-color-black);
+}
+
+.color-purple {
+    color: var(--text-color-purple);
 }
 
 .logo-dev {
