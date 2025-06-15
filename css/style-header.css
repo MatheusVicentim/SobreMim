@@ -21,7 +21,7 @@ header>* {
 }
 
 header.scrolled {
-    background-color: var(--background-color-black-op99);
+    background-color: var(--background-color-black);
 
     padding: 0.5rem;
 

@@ -2,13 +2,17 @@
     --text-color-black: #333333;
     --text-color-white: #f4f4f4;
     --text-color-purple: #7b68ee;
-    --background-color-white: #f4f4f4;
+    --text-color-blue: #3d8bff;
     --text-p: Roboto, sans-serif;
     --text-label: Roboto, sans-serif;
     --text-h1: 'Comic Relief', cursive;
     --boder-color: #3333333d;
     --background-color-black: #333333;
     --background-color-black-op99: #333333fc;
+    --background-color-white: #f4f4f4;
+    --background-color-purple: #7b68ee;
+    --background-color-blue: #3d8bff;
+
 }
 
 html {
@@ -18,7 +22,7 @@ html {
 body {
     margin: 0;
     padding: 1rem;
-    background-color: var(--background-color-white);
+    background-color: var(--background-color-black-op99);
     padding-top: 90px;
 }
 

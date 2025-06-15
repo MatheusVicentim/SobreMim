@@ -8,7 +8,41 @@ main section {
 }
 
 .habilidades {
-    background-color: brown;
+    /* background-color: var(--background-color-purple); */
+    background: var(--background-color-black);
+
+    background: linear-gradient(270deg, var(--background-color-black) 0%, var(--background-color-purple) 50%, var(--background-color-blue) 100%);
+
+    background: -moz-linear-gradient(270deg, var(--background-color-black) 0%, var(--background-color-purple) 50%, var(--background-color-blue) 100%);
+
+    background: -webkit-linear-gradient(270deg, var(--background-color-black) 0%, var(--background-color-purple) 50%, var(--background-color-blue) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
+
+    /* background: hsla(0, 0%, 20%, 1);
+
+    background: linear-gradient(270deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 20%, 1) 0%, hsla(249, 80%, 67%, 1) 100%);
+
+    background: -moz-linear-gradient(270deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 20%, 1) 0%, hsla(249, 80%, 67%, 1) 100%);
+
+    background: -webkit-linear-gradient(270deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 20%, 1) 0%, hsla(249, 80%, 67%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#333333", GradientType=1); */
+}
+
+.habilidade-title {
+    background: var(--background-color-purple);
+
+    background: linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    background: -moz-linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    background: -webkit-linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
+
+    border-radius: 0 10px 20px 0px;
+    padding: 5px;
 }
 
 .habilidade-detalhes {
@@ -21,7 +55,7 @@ main section {
     margin: 0 auto;
     padding: 1rem;
     box-sizing: border-box;
-    border: 1px dashed #ccc;
+    /* border: 1px dashed #ccc; */
     /* Apenas para visualização */
 }
 
@@ -51,7 +85,7 @@ main section {
     /* height: 90%;
     min-height: 100px; */
     align-items: stretch;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var(--background-color-black) 50%, rgba(0, 0, 0, 0) 100%);
     margin: 0 1rem;
     border-radius: 1px;
 }
@@ -60,7 +94,7 @@ main section {
     height: 2px;
     min-height: 2px;
     margin: 1rem auto;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--background-color-black) 50%, rgba(0, 0, 0, 0) 100%);
     border-radius: 1px;
 }
 
@@ -68,7 +102,7 @@ main section {
 .detalhe-img {
     flex: 0.5;
     text-align: center;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
     /* Apenas para visualização */
 }
 
@@ -79,7 +113,7 @@ main section {
 /* Estilo para o texto */
 .container-detalhe-texto {
     text-align: left;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
     /* Apenas para visualização */
 }
 
@@ -95,7 +129,15 @@ main section {
 }
 
 .sobre {
-    background-color: cadetblue;
+    background: var(--background-color-blue);
+
+    background: linear-gradient(270deg, var(--background-color-blue) 0%, var(--background-color-purple) 100%);
+
+    background: -moz-linear-gradient(270deg, var(--background-color-blue) 0%, var(--background-color-purple) 100%);
+
+    background: -webkit-linear-gradient(270deg, var(--background-color-blue) 0%, var(--background-color-purple) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
 }
 
 .container-sobre {
@@ -139,7 +181,15 @@ p.sobre-text {
 }
 
 .contato {
-    background-color: mediumslateblue;
+    background: var(--background-color-purple);
+
+    background: linear-gradient(270deg, var(--background-color-purple) 0%, var(--background-color-black) 100%);
+
+    background: -moz-linear-gradient(270deg, var(--background-color-purple) 0%, var(--background-color-black) 100%);
+
+    background: -webkit-linear-gradient(270deg, var(--background-color-purple) 0%, var(--background-color-black) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
 }
 
 .container-contato {
@@ -161,7 +211,8 @@ p.sobre-text {
     transition: border-color, box-shadow 0.2s;
     display: block;
     font-family: var(--text-label);
-    color: var(--text-color);
+    color: var(--text-color-black);
+    background: #dbd8ea;
 }
 
 .form-contato label {
@@ -178,17 +229,16 @@ p.sobre-text {
 .form-contato textarea:hover,
 .form-contato textarea:focus {
     outline: none;
-    border-color: #09d;
-    box-shadow: 0 0 0 3px #4dc8ff;
+    border-color: var(--background-color-blue);
+    box-shadow: 0 0 0 3px var(--background-color-purple);
 }
 
 .form-contato button {
     display: block;
     padding: 1rem;
-    background: #ffff00;
+    background: linear-gradient(180deg, var(--background-color-purple) 0%, var(--background-color-black) 100%);
     color: var(--text-color);
     font-family: var(--text-label);
-    ;
     text-transform: uppercase;
     border: none;
     border-radius: 8px;
@@ -200,7 +250,7 @@ p.sobre-text {
 .form-contato button:hover,
 .form-contato button:focus {
     outline: none;
-    background: #a5a504;
+    background: linear-gradient(180deg, var(--background-color-blue) 0%, var(--background-color-black) 100%);
 }
 
 @media(max-width: 768px) {
@@ -228,7 +278,7 @@ p.sobre-text {
         height: 2px !important;
         min-height: 2px !important;
         margin: 1rem auto !important;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--background-color-black) 50%, rgba(0, 0, 0, 0) 100%);
 
     }
 
