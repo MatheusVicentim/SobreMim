@@ -4,7 +4,7 @@ main {
 }
 
 main section {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
 }
 
 .habilidades {
@@ -90,6 +90,11 @@ main section {
     border-radius: 1px;
 }
 
+.detalhe-separador-vertical.mb {
+    display: none;
+    visibility: collapse;
+}
+
 .detalhe-separador-horizontal {
     height: 2px;
     min-height: 2px;
@@ -138,6 +143,21 @@ main section {
     background: -webkit-linear-gradient(270deg, var(--background-color-blue) 0%, var(--background-color-purple) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
+}
+
+.sobre-title {
+    background: var(--background-color-purple);
+
+    background: linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    background: -moz-linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    background: -webkit-linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
+
+    border-radius: 0 10px 20px 0px;
+    padding: 5px;
 }
 
 .container-sobre {
@@ -190,6 +210,22 @@ p.sobre-text {
     background: -webkit-linear-gradient(270deg, var(--background-color-purple) 0%, var(--background-color-black) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
+}
+
+
+.contato-title {
+    background: var(--background-color-purple);
+
+    background: linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    background: -moz-linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    background: -webkit-linear-gradient(0deg, var(--background-color-black) 0%, var(--background-color-purple) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#333333", endColorstr="#7B68EE", GradientType=1);
+
+    border-radius: 0 10px 20px 0px;
+    padding: 5px;
 }
 
 .container-contato {
@@ -279,7 +315,13 @@ p.sobre-text {
         min-height: 2px !important;
         margin: 1rem auto !important;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--background-color-black) 50%, rgba(0, 0, 0, 0) 100%);
+        display: none;
+        visibility: collapse;
+    }
 
+    .detalhe-separador-vertical.mb {
+        display: block;
+        visibility: visible;
     }
 
     .nav-container {
