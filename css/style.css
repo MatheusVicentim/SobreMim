@@ -1,3 +1,16 @@
+[data-theme="light"] {
+    --text-color-black: #f7efd8;
+    --text-color-white: #606162;
+    --text-color-purple: #7b68ee;
+    --text-color-blue: #c2dbff;
+    --boder-color: #f7efd833;
+    --background-color-black: #f7efd8;
+    --background-color-black-op99: #f7efd842;
+    --background-color-white: #606162;
+    --background-color-purple: #efeff6;
+    --background-color-blue: #C6E4FF;
+}
+
 :root {
     --text-color-black: #333333;
     --text-color-white: #f4f4f4;
@@ -6,13 +19,13 @@
     --text-p: Roboto, sans-serif;
     --text-label: Roboto, sans-serif;
     --text-h1: 'Comic Relief', cursive;
-    --boder-color: #3333333d;
+    --boder-color: #33333333;
     --background-color-black: #333333;
     --background-color-black-op99: #333333fc;
     --background-color-white: #f4f4f4;
     --background-color-purple: #7b68ee;
     --background-color-blue: #3d8bff;
-
+    --background-input: #dbd8ea;
 }
 
 html {
@@ -59,7 +72,7 @@ h3 {
 
 label {
     font-family: var(--text-label);
-    color: var(--text-color-black);
+    color: var(--text-color-white);
     font-size: 1rem;
     line-height: 1;
 }
@@ -77,8 +90,6 @@ label {
     flex-direction: column;
 }
 
-.container-logo-horizontal {}
-
 .logo-matheus {
     font-family: var(--text-p);
     font-weight: 700;
@@ -88,7 +99,7 @@ label {
     color: var(--text-color-white);
 }
 
-.color-baclack {
+.color-black {
     color: var(--text-color-black);
 }
 
@@ -102,13 +113,12 @@ label {
     font-weight: 700;
 }
 
-/* Para mostrar o botão voltar ao topo */
 .back-to-top {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0066cc;
+    background-color: var(--background-color-black);
     color: var(--text-color-white);
     width: 50px;
     height: 50px;
@@ -121,6 +131,7 @@ label {
     opacity: 0;
     transition: opacity 0.3s ease;
     text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .back-to-top.show {
@@ -130,20 +141,6 @@ label {
 
 @media(max-width: 768px) {
     body {
-        padding-top: 120px;
+        padding-top: 160px;
     }
-
-    /* 
-    .nav-container {
-        justify-content: center;
-    }
-
-    .habilidade-detalhes {
-        flex-direction: column;
-    }
-
-    .detalhe-img,
-    .detalhe-texto {
-        width: 100%;
-    } */
 }

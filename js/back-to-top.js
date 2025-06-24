@@ -46,3 +46,46 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+class ThemeManager {
+  constructor() {
+    this.body = document.body;
+    this.currentTheme = this.body.getAttribute("data-theme");
+
+    this.themeToggle = document.getElementById("themeToggle");
+    this.themeIcon = document.getElementById("themeIcon");
+
+    this.themeToggle.addEventListener("click", () => this.toggleTheme());
+  }
+
+  toggleTheme() {
+    const currentTheme = this.body.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    this.applyTheme(newTheme);
+
+    this.themeToggle.style.transform = "scale(0.95)";
+    setTimeout(() => {
+      this.themeToggle.style.transform = "scale(1)";
+    }, 150);
+  }
+
+  applyTheme(theme) {
+    if (theme === "dark") {
+      this.body.setAttribute("data-theme", "dark");
+      this.themeIcon.src = "images/tema-dark.png";
+    } else {
+      this.body.setAttribute("data-theme", "light");
+      this.themeIcon.src = "images/tema-light.png";
+    }
+  }
+
+  watchSystemTheme() {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    this.applyTheme(mediaQuery.matches ? "dark" : "light");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const themeManager = new ThemeManager();
+  themeManager.watchSystemTheme();
+});

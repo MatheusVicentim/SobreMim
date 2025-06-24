@@ -10,21 +10,41 @@ header {
     left: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil para separar do conteúdo */
     transition: all 0.3s ease;
-    /* Suaviza mudanças de estilo */
-
 }
 
 header>* {
     margin: 0 1rem;
 }
 
+.themeToggle {
+    margin: 0 1rem 0 auto;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    border: none;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    :hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
 header.scrolled {
     background-color: var(--background-color-black);
-
     padding: 0.5rem;
+}
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 1rem;
 }
 
 
@@ -85,14 +105,12 @@ header.scrolled {
     padding: 6px 10px;
 }
 
-/* Efeito ao passar o mouse */
 .nav-link:hover {
     color: var(--text-color-purple);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Efeito após o link */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -116,8 +134,11 @@ header.scrolled {
 }
 
 @media(max-width: 768px) {
-    header {
+
+    header,
+    .header-container {
         flex-direction: column;
+        width: auto;
     }
 
     .header-title {

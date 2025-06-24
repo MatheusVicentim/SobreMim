@@ -3,9 +3,6 @@ main {
     margin: 0 auto;
 }
 
-main section {
-    /* padding: 0.5rem; */
-}
 
 .habilidades {
     /* background-color: var(--background-color-purple); */
@@ -49,17 +46,12 @@ main section {
     display: flex;
     align-items: stretch;
     justify-content: center;
-    /* gap: 1rem; */
     width: 100%;
-    /* max-width: 1000px; */
     margin: 0 auto;
     padding: 1rem;
     box-sizing: border-box;
-    /* border: 1px dashed #ccc; */
-    /* Apenas para visualização */
 }
 
-/* Estilo para as divs filhas */
 .detalhe-img,
 .container-detalhe-texto {
     flex: 1;
@@ -82,8 +74,6 @@ main section {
 
 .detalhe-separador-vertical {
     width: 2px;
-    /* height: 90%;
-    min-height: 100px; */
     align-items: stretch;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var(--background-color-black) 50%, rgba(0, 0, 0, 0) 100%);
     margin: 0 1rem;
@@ -103,31 +93,23 @@ main section {
     border-radius: 1px;
 }
 
-/* Estilo para centralizar a imagem */
 .detalhe-img {
     flex: 0.5;
     text-align: center;
-    /* border: 1px solid #eee; */
-    /* Apenas para visualização */
 }
 
 .detalhe-img img {
     width: 100px;
 }
 
-/* Estilo para o texto */
 .container-detalhe-texto {
     text-align: left;
-    /* border: 1px solid #eee; */
-    /* Apenas para visualização */
 }
 
-/* Estilo para o título */
 .detalhe-title {
     margin-top: 0;
 }
 
-/* Estilo para o texto */
 .detalhe-text {
     margin: 10px 0;
     line-height: 1.5;
@@ -248,7 +230,7 @@ p.sobre-text {
     display: block;
     font-family: var(--text-label);
     color: var(--text-color-black);
-    background: #dbd8ea;
+    background: var(--background-input);
 }
 
 .form-contato label {
